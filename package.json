@@ -1,7 +1,7 @@
 {
   "name": "example-contentful-theExampleApp-js",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "start:watch": "nodemon ./bin/www --ignore public/",
     "start:dev": "node ./bin/www",
@@ -17,8 +17,16 @@
     "test:integration": "jest test/integration",
     "test:integration:watch": "jest test/integration --watch",
     "test:unit": "jest test/unit",
-    "test:unit:watch": "jest test/unit --watch"
+    "test:unit:watch": "jest test/unit --watch",
+    "build": "echo 'Nothing to build, skipping...'"
   },
+  "files": [
+    "bin/",
+    "routes/",
+    "app.js",
+    "package.json",
+    "README.md"
+  ],
   "engines": {
     "node": ">=8.9.3"
   },
